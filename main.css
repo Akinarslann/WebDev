@@ -1,0 +1,225 @@
+.google{
+    display: flex;
+    padding-top: 1.4px;
+    padding-right: 4px;
+    justify-content: end;
+    font-size: 13px;
+    font-family: sans-serif;
+    gap: 15.5px;
+    align-items: center;
+}
+.apps-tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+.apps-tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    transition: opacity 0.2s;
+}
+
+.apps-tooltip:hover .apps-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 1s;
+}
+.apps{
+    border: 6px solid white;
+    border-radius: 100%;
+    height: 23px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in, border 0.5s ease-in;
+    opacity: 0.8;
+}
+.apps:hover{
+    background-color: rgb(233, 233, 233);
+    border: 6px solid rgb(233, 233, 233);
+}
+
+.gmail-tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+.gmail-tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    position: absolute;
+    top: 100%;
+    left: 130%;
+    transform: translateX(-100%);
+    white-space: nowrap;
+    z-index: 1;
+    transition: opacity 0.2s;
+}
+
+.gmail-tooltip:hover .gmail-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 1s;
+}
+.search{
+    margin: auto;
+    height: 69.4vh;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-direction: column;
+    align-items: center;
+}
+.inputSearch{
+    height: 96%;
+    width: 400px; 
+    border: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.searchBox{
+    border: 1px solid rgb(209, 209, 209);
+    border-radius:30px;
+    padding-top: 1px;
+    height: 51px;
+    width: 581px;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+.searchBox:hover {
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 0px 0px 2px;
+}
+.iconButtons{
+    display: flex;
+    justify-content: space-evenly;
+    height: 23.5px;
+    padding: 13px 17px;
+    gap: 16.5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.buttons{
+    height: 35px;
+    width: 578px;
+    display: grid;
+    grid-template-columns: 123px 215px;
+    justify-content: center;
+    gap: 12px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgb(75, 74, 74);
+}
+.searchButton{
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(248, 248, 248);
+    border-radius:3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgb(75, 74, 74);
+}
+.luckyDayButton{
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(248, 248, 248);
+    border-radius:3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchButton:hover {
+    border: 1px solid rgb(223, 223, 223);
+}
+.luckyDayButton:hover {
+    border: 1px solid rgb(223, 223, 223);
+}
+
+.lines {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+
+}
+.line1 {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: rgb(29, 29, 29);
+    padding-left: 60px;
+}
+.line2 {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100% 100% 100%;
+    font-size: 14px;
+    color: rgb(29, 29, 29);
+    font-family: sans-serif;
+}
+.line2left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 35px;
+}
+.line2center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.line2right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+.luckyDayButton:hover{
+    text-decoration: none;
+}
